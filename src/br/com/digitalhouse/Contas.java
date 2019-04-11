@@ -2,7 +2,7 @@ package br.com.digitalhouse;
 
 public abstract class Contas extends Clientes {
 
-    private Double saldo;
+    public Double saldo = 0.00;
 
 
     public void depositarDinheiro(Double valorDeposito){

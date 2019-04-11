@@ -12,16 +12,17 @@ public class Principal {
         cliente.setNumeroCliente(1);
         cliente.setCpf("12334330986");
         cliente.setRg("2133443543");
-        poupanca.setNumeroCliente(1);
-        poupanca.setJuros(10.1);
+        cliente.setSobrenome("Silva");
 
-        poupanca.setSaldo(10000.10);
-        contacorrente.setSaldo(15000.10);
+        poupanca.setJuros(0.1);
+        poupanca.setSaldo(10000.00);
+        contacorrente.setSaldo(15000.00);
 
+        poupanca.depositarDinheiro(100.00);
+        System.out.println(poupanca.getSaldo());
 
-
-        poupanca.depositarDinheiro(100.50);
-        //contacorrente.depositarDinheiro(450.40);
+        contacorrente.depositarDinheiro(100.00);
+        System.out.println(contacorrente.getSaldo());
 
 
 
